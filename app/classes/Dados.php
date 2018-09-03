@@ -18,6 +18,7 @@ class Dados
     {
         $this->start = $start;
         $this->end = $end;
+
     }
 
     public function iniciarLista()
