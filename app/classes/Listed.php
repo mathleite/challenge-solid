@@ -2,7 +2,7 @@
 namespace app\classes;
 use app\interfaces\InterfaceListar;
 
-class Listar implements InterfaceListar
+class Listed implements InterfaceListar
 {
     private $lista;
     public function __construct($lista)

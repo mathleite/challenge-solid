@@ -2,7 +2,7 @@
 namespace app\classes;
 use app\interfaces\InterfaceSubstituir;
 
-class SubstituiPor3e5 implements  InterfaceSubstituir
+class DivisibleByFifteen implements  InterfaceSubstituir
 {
     private $lista;
 

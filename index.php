@@ -1,25 +1,27 @@
 <?php
 require_once 'vendor/autoload.php';
 
-use app\classes\Contador;
-use app\classes\Listar;
-use app\classes\SubstituiPor3;
-use app\classes\SubstituiPor5;
-use app\classes\SubstituiPor3e5;
 use app\classes\Dados;
+use app\classes\DivisibleByFifteen;
+use app\classes\DivisibleByThree;
+use app\classes\DivisibleByFive;
+use app\classes\Listed;
+use app\classes\Execute;
 
-$contador = new Dados(1,15);
-$lista = $contador->iniciarLista();
+$executor = new Execute();
 
-$substituicaoPor3e5 = new SubstituiPor3e5($lista);
-$listaSub3e5 = $substituicaoPor3e5->substituir();
+$data = new Dados(1,15);
+$list = $data->iniciarLista();
 
-$substituicaoPor3 = new SubstituiPor3($listaSub3e5);
-$listaSub3 = $substituicaoPor3->substituir();
+$divisibleByFifteen = new DivisibleByFifteen($list);
+$listFifteen = $executor->execute($divisibleByFifteen);
 
-$substituicaoPor5 = new SubstituiPor5($listaSub3);
-$listaSub5 = $substituicaoPor5->substituir();
+$divisibleByThree = new DivisibleByThree($listFifteen);
+$listThree = $executor->execute($divisibleByThree);
 
-$listar = new Listar($listaSub5);
-$listar->listar();
+$divisibleByFive = new DivisibleByFive($listThree);
+$listFive = $executor->execute($divisibleByFive);
+
+$listeding = new Listed($listFive);
+$listeding->listar();
 
