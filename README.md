@@ -1,8 +1,4 @@
-# FizzBuzz
-FizzBuzz PHP implementation
-
-
-```
-~ $ composer install
-~ $ php public/index.php
+# Challenge made with SOLID
+````
+~Composer install | ~Docker | ~PHP public/index.php
 ```
