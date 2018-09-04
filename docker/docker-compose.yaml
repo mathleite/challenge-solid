@@ -1,0 +1,12 @@
+version: '3.0'
+services:
+    php:
+        build: .
+        ports:
+            - "80:80"
+        volumes:
+            - ./../.:/var/www/html/challenge
+        networks:
+            - backend
+networks:
+    backend:
