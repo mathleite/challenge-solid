@@ -1,4 +1,6 @@
-# Challenge made with SOLID
+# PHP - SOLID
 ````
-~Composer install | ~Docker | ~PHP public/index.php
+~$ Composer install
+~$ Docker
+~$ php public/index.php
 
